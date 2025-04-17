@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קופצים ונהנים - מתנפחים בגוש שילה להשכרה</title>
+    <meta name="description" content="מתנפח מים ענק להשכרה באזור עמיחי והסביבה - קופצים ונהנים. מגלשה, בריכה ומפל מים במתנפח אחד מושלם במחיר משתלם.">
+    <meta name="keywords" content="מתנפח מים, השכרת מתנפחים, עמיחי, גוש שילה, אירועי קיץ, יום הולדת, מתנפחים להשכרה">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            direction: rtl;
+            background-color: #f0f9ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #00b4db, #0083b0);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+        }
+        .logo {
+            max-width: 300px;
+            margin: 0 auto 20px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .subtitle {
+            font-size: 22px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        .hero-image {
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            max-width: 100%;
+            height: auto;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0083b0;
+            margin-bottom: 20px;
+            font-size: 28px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 60px;
+            height: 3px;
+            background: #00b4db;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .feature-item {
+            flex-basis: 48%;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8faff;
+            border-right: 4px solid #00b4db;
+            border-radius: 5px;
+        }
+        .feature-title {
+            font-weight: 600;
+            color: #0083b0;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .price-box {
+            text-align: center;
+            background-color: #e9f9ff;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .price {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0083b0;
+            margin: 10px 0;
+        }
+        .promo {
+            background-color: #ffd700;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: 600;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            background: #00b4db;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 0 3px 8px rgba(0,131,176,0.3);
+        }
+        .btn:hover {
+            background: #0083b0;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(0,131,176,0.4);
+        }
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .contact-item {
+            margin-bottom: 15px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-highlight {
+            font-weight: 700;
+            color: #0083b0;
+            font-size: 22px;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666;
+            font-size: 14px;
+        }
+        ul {
+            padding-right: 20px;
+            list-style-position: inside;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .monkey-icon {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        .banana-icon {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .jungle-decoration {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .water-drops {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 60px;
+            height: 60px;
+            opacity: 0.8;
+        }
+        .clickable-icon {
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            .subtitle {
+                font-size: 18px;
+            }
+            section {
+                padding: 20px;
+            }
+            .feature-item {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/api/placeholder/300/200" alt="לוגו קופצים ונהנים - מתנפחים בגוש שילה" />
+            </div>
+            <h1>קופצים ונהנים</h1>
+            <p class="subtitle">מתנפח מים ענק להשכרה באזור עמיחי והסביבה</p>
+            <img src="/api/placeholder/800/400" alt="מתנפח מים בעיצוב ג'ונגל עם קוף על בננה" class="hero-image" />
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>
+                <svg class="monkey-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="30" fill="#FFB347"/>
+                    <circle cx="40" cy="40" r="5" fill="#7D4427"/>
+                    <circle cx="60" cy="40" r="5" fill="#7D4427"/>
+                    <path d="M40 60 Q50 70 60 60" stroke="#7D4427" stroke-width="3" fill="none"/>
+                    <path d="M30 30 Q20 20 25 10" stroke="#FFB347" stroke-width="8" fill="none"/>
+                    <path d="M70 30 Q80 20 75 10" stroke="#FFB347" stroke-width="8" fill="none"/>
+                </svg>
+                חוויה קייצית מרעננת לילדים!
+                <svg class="banana-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 60 Q40 80 80 30" stroke="#FFDA44" stroke-width="20" stroke-linecap="round" fill="none"/>
+                    <path d="M20 60 Q40 70 80 30" stroke="#FFE57F" stroke-width="10" stroke-linecap="round" fill="none"/>
+                </svg>
+            </h2>
+            <p>מחפשים פתרון מושלם לימים החמים ולבילוי משפחתי? מתנפח המים שלנו בעיצוב הג'ונגל הצבעוני עם הקוף על הבננה יעניק לילדיכם חוויה רטובה, מלאת צבע ושמחה! מתאים לאירועים, חופשים, ימי הולדת וכל רגע שדורש קצת כיף וריענון.</p>
+            
+            <div class="jungle-decoration">
+                <svg width="300" height="50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 50 C30 30 40 25 50 50 C60 25 70 30 90 50 C110 30 120 25 130 50 C140 25 150 30 170 50 C190 30 200 25 210 50 C220 25 230 30 250 50 C270 30 280 25 290 50" stroke="#4CAF50" stroke-width="5" fill="none"/>
+                    <circle cx="50" cy="25" r="10" fill="#8BC34A"/>
+                    <circle cx="130" cy="25" r="10" fill="#8BC34A"/>
+                    <circle cx="210" cy="25" r="10" fill="#8BC34A"/>
+                </svg>
+            </div>
+            
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-title">מגלשה, בריכה ומפל מים</div>
+                    <p>הכל במתנפח אחד מושלם לכיף קיצי</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">עיצוב ג'ונגל עם קוף על בננה</div>
+                    <p>עיצוב צבעוני שילדים אוהבים</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">מתאים לגילאי 3-10</div>
+                    <p>בטיחותי ומותאם במיוחד לילדים</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">מידות נוחות</div>
+                    <p>4.30 מטר אורך × 3.00 מטר רוחב × 2.65 מטר גובה</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>מחירים ומבצעים מיוחדים</h2>
+            
+            <div class="price-box">
+                <div class="price">250 ₪ ליום</div>
+                <p>השכרה ליום אחד של חוויה רטובה ומהנה</p>
+            </div>
+            
+            <div class="price-box">
+                <div class="price">450 ₪ ליומיים</div>
+                <p>כולל הנחה מובנית! חיסכון של 50 ₪</p>
+            </div>
+            
+            <p>מעוניינים בהשכרה ליותר מיומיים ברצף? מגיעה לכם הנחה מיוחדת!</p>
+            
+            <div class="promo">
+                המבצע בתוקף להזמנות בשבוע הקרוב בלבד!
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="tel:0559914211" class="btn">להזמנה עכשיו</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>איסוף ופרטים</h2>
+            <ul>
+                <li class="contact-item">
+                    <a href="https://waze.com/ul?q=קופצים%20ונהנים%20השכרת%20מתנפחים" target="_blank" style="text-decoration: none; color: inherit;">
+                        <svg class="icon clickable-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#0083b0"/>
+                        </svg>
+                    </a>
+                    איסוף עצמי מבית משפחת שאג ביישוב <strong>עמיחי</strong>
+                </li>
+                <li class="contact-item">
+                    <a href="https://waze.com/ul?q=קופצים%20ונהנים%20השכרת%20מתנפחים" target="_blank" style="text-decoration: none; color: inherit;">
+                        <svg class="icon clickable-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2c-4.2 0-8 3.22-8 8.2 0 3.18 2.45 6.92 7.34 11.23.38.33.95.33 1.33 0C17.55 17.12 20 13.38 20 10.2 20 5.22 16.2 2 12 2zm-1.77 10.66C8.33 11.59 7 10.19 7 8.49 7 6.4 8.73 5.05 11 5.05c1.55 0 2.84.93 3.53 2.43C16.41 7.84 18 9.5 18 11.49c0 2.09-1.73 3.44-4 3.44-1.55 0-2.84-.93-3.53-2.43l-.24.16z" fill="#0083b0"/>
+                        </svg>
+                    </a>
+                    קל למצוא אותנו בווייז: <strong>קופצים ונהנים השכרת מתנפחים</strong>
+                </li>
+                <li>המתנפח קומפקטי ונכנס בקלות לרכב משפחתי</li>
+            </ul>
+            
+            <div class="contact-details">
+                <p class="contact-item">לפרטים והזמנות:</p>
+                <p class="contact-item contact-highlight">
+                    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" fill="#0083b0"/>
+                    </svg>
+                    אלישע - 055-9914211
+                </p>
+                <p class="contact-item">
+                    <a href="sms:0559914211?body=שלום אני מתעניין בהשכרת מתנפח" style="text-decoration: none; color: inherit;">
+                        <svg class="icon clickable-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" fill="#0083b0"/>
+                        </svg>
+                    </a>
+                    (שיחות או SMS בלבד, ללא וואטסאפ)
+                </p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>למה לבחור במתנפח שלנו?</h2>
+            <ul>
+                <li><strong>בידור מובטח</strong> - הילדים יהיו עסוקים ושמחים לשעות</li>
+                <li><strong>חוויה מרעננת</strong> - מושלם לימי הקיץ החמים</li>
+                <li><strong>קל להתקנה</strong> - תוך דקות המתנפח מוכן לשימוש</li>
+                <li><strong>מחיר משתלם</strong> - חוויה שלמה במחיר הוגן</li>
+                <li><strong>שירות אישי</strong> - אנחנו כאן לכל שאלה ועזרה</li>
+            </ul>
+            
+            <div class="jungle-decoration">
+                <svg width="300" height="50" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="35" cy="25" r="15" fill="#4CAF50"/>
+                    <circle cx="50" cy="25" r="10" fill="#8BC34A"/>
+                    <circle cx="65" cy="25" r="15" fill="#4CAF50"/>
+                    <circle cx="115" cy="25" r="15" fill="#4CAF50"/>
+                    <circle cx="130" cy="25" r="10" fill="#8BC34A"/>
+                    <circle cx="145" cy="25" r="15" fill="#4CAF50"/>
+                    <circle cx="195" cy="25" r="15" fill="#4CAF50"/>
+                    <circle cx="210" cy="25" r="10" fill="#8BC34A"/>
+                    <circle cx="225" cy="25" r="15" fill="#4CAF50"/>
+                </svg>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 קופצים ונהנים | כל הזכויות שמורות</p>
+        </div>
+    </footer>
+</body>
+</html>
